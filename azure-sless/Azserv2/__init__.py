@@ -10,4 +10,5 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     letters = string.ascii_lowercase
-    return (''.join(random.choice(letters) for i in range(5)))
+    new_letters = ''.join(random.choice(letters) for i in range(5))
+    return new_letters
